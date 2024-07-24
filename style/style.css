@@ -15,10 +15,12 @@
 
 header {
     
+    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0)  100%) ;
+
     background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+
     color: rgba(255, 255, 255, 1);
     padding:0% 5%;
-   
 }
 
 
@@ -198,16 +200,23 @@ header {
     width: 366px;
     height: 312px;
 } */
+.bmi-head{
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.bmi{
+margin: 88px 380px 88px;
+text-align: left;
 
-
+}
 .form-title{
     width: 570px;
-
  color:rgba(255, 255, 255, 0.5) ;
  font-size: 14px;
  font-weight: 400;
  line-height: 24px;
-
 }
 
 .table{
@@ -290,7 +299,7 @@ input{
 .footer {
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
-    padding: 66px 190px;
+    padding: 66px 180px;
     gap: 80px;
     
 }
@@ -300,9 +309,9 @@ input{
     font-style: italic;
     font-weight: 800;
     justify-content: space-between;
-  
     align-items: center;
     margin-top:1px; 
+    margin-bottom: 5px;
    
  }
 
@@ -320,10 +329,27 @@ input{
 }
 
 .lists {
-    color: rgba(255, 255, 255, 0.5);
+     color: rgba(255, 255, 255, 0.5);
     list-style: none;
     font-size: 23px;
     font-weight: 400;
+    line-height: 1.9;
     justify-content: center;
     margin-left: -34px;
+}
+@media screen and (max-width:576px){
+    
+    .bmi{
+        margin: 20px;
+    }
+    .bmi-head{
+        margin-bottom: 0;
+     font-size: 32px;
+    }
+    .form-title{
+    width: 350px;
+    }
+}
+.hide{
+    display: none;
 }
