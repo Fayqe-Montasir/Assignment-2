@@ -17,10 +17,15 @@ header {
     background: linear-gradient(180deg, #111111 0%, rgba(134, 131, 131, 0) 100%);
     padding: 0% 12%;
 }
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bars {
+    display: none;
 }
 
 .header {
@@ -102,48 +107,68 @@ header {
 .Image {
     width: 100%;
 }
-.Image{
+
+.Image {
     position: relative;
 }
+
 #Experience-badge {
     position: absolute;
     border: 1px solid;
     border-radius: 12px;
     width: 193px;
     height: 94px;
-    background-color:rgba(86, 86, 86, 0.54);
+    background-color: rgba(86, 86, 86, 0.54);
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 0.1);
     margin-left: 54%;
     margin-top: 30%;
-  
+
 }
+
 #work {
     font-size: 40px;
     font-weight: 900;
-   padding-right: 24px;
+    padding-right: 24px;
 }
-.work-title{
- color: rgba(255, 255, 255, 0.65) ;  
+
+.work-title {
+    color: rgba(255, 255, 255, 0.65);
 
 }
-#video{
+
+#video {
     position: absolute;
     border: 1px solid;
     border-radius: 12px;
     width: 193px;
     height: 94px;
-    background-color:rgba(86, 86, 86, 0.54);
+    background-color: rgba(86, 86, 86, 0.54);
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 0.1);
-     margin-top: 105%;
-    margin-left:-110%;
+    padding: 5px 5px 5px 25px;
+    margin-top: 105%;
+    margin-left: -110%;
 }
-#tutorial{
+
+#tutorial {
     color: rgba(250, 250, 249, 1);
     font-size: 24px;
     font-weight: 900;
 }
+
+#video i {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40Px;
+    color: rgba(230, 83, 60, 1);
+    background-color: rgba(230, 83, 60, 1);
+    margin-left: -30%;
+    margin-top: 4%;
+
+}
+
 /* main */
 .hedline {
     color: rgba(255, 255, 255, 1);
@@ -201,26 +226,39 @@ header {
     margin-top: -20px;
 }
 
-/* run-part not done */
-.run-part{
+.run-part {
     display: flex;
     margin: auto 10%;
-    gap:90px;
-    padding:30px 40px;
+    gap: 90px;
+    padding: 30px 40px;
     background-color: rgba(34, 34, 34, 1);
     border-radius: 18px;
 }
-.run-title{
-    padding:16px 15%;
+
+.run-title {
+    padding: 16px 12%;
+    margin: 5% 0;
 }
-.pic-run{
+
+.btg-new {
+    background-color: rgba(230, 83, 60, 1);
+    border: rgba(230, 83, 60, 1);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 48px;
+    padding: 16px 18%;
+    padding: 16px 15%;
+    margin-top: 5%;
+}
+
+.pic-run {
     border-radius: 18px;
 }
 
-.run-pic{
-    padding: 30px;
-    width:100%;
-   
+.run-pic {
+    padding: 1%;
+    width: 100%;
 }
 
 .bmi-head {
@@ -233,7 +271,6 @@ header {
 .bmi {
     margin: 88px 380px 88px;
     text-align: left;
-
 }
 
 .form-title {
@@ -243,13 +280,12 @@ header {
     font-weight: 400;
     line-height: 24px;
 }
+
 .table {
     background-color: rgba(34, 34, 34, 1);
     display: flex;
     gap: 180px;
     padding: 0px 189px
-        /* padding:2% 13%; */
-
 }
 
 .table-box {
@@ -280,7 +316,9 @@ th {
     padding: 9px 10px;
 }
 
-input,select{
+input,
+select {
+    width: 242px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgb(52, 51, 51);
     border-radius: 8px;
@@ -288,10 +326,16 @@ input,select{
     font-size: 16px;
     font-weight: 400;
     padding: 13px;
-    margin:1%;
+    margin: 1%;
 }
 
+.select-1 {
+    width: 47%;
+}
 
+.select-2 {
+    width: 97%;
+}
 
 .trainers {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -327,14 +371,16 @@ input,select{
 }
 
 /* footer */
-.footers{
+.footers {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .footer {
     display: flex;
     padding: 66px 180px;
     gap: 80px;
 }
+
 .footer-title {
     color: rgba(230, 83, 60, 1);
     font-size: 70px;
@@ -344,6 +390,7 @@ input,select{
     align-items: center;
     margin-bottom: 5px;
 }
+
 .footer-title-1 {
     color: white;
     font-size: 32px;
@@ -366,59 +413,136 @@ input,select{
     justify-content: center;
     margin-left: -34px;
 }
-.copy{
+
+.copy {
     color: rgba(255, 255, 255, 0.5);
     font-size: 20px;
     margin: 30px auto 80px auto;
     font-weight: 400;
-    text-align: center; 
+    text-align: center;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
+    .banner,
     .footer,
     .mtow,
     .table,
-    .run-part{
-      flex-direction: column;
-      padding:20px;
+    .run-part {
+        flex-direction: column;
+        padding: 20px;
     }
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+    }
+
+    header {
+        padding: 0% 5%
+    }
+
+    .btg-1,
+    .btg-2 {
+        padding: 16px 26px;
+
+    }
+
+    .banner {
+        padding: 0;
+        gap: 50px;
+    }
+
+    #Experience-badge {
+        width: 145px;
+        margin-left: 55%;
+        margin-top: 10%;
+    }
+
+    .work-title {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    #video {
+        width: 155px;
+        margin-top: 62%;
+        margin-left: -90%;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        font-weight: 900;
+        width: 285px;
+        height: 129px;
+    }
+
+    #work,
     .hedline,
-    .bmi-head{
+    .bmi-head {
         font-size: 32px;
         font-weight: 900;
     }
+
     .prg,
     .title,
-    .form-title{
+    .form-title {
         width: 317px;
+        height: 95px;
     }
-    .prg{
+
+    .prg {
         font-size: 14px;
     }
-    .title{
+
+    .title {
         margin: auto;
         margin-top: -14px;
     }
-    
-    .mtow{
+
+    .mtow {
         align-items: center;
     }
-    .table{
+
+    .btg-new {
+        padding: 16px 38%;
+    }
+
+    .run-part {
+        margin: auto 5%;
+        gap: 30px;
+    }
+
+    .pic-run {
+        width: 340px;
+    }
+
+    .table {
         gap: 20px;
     }
-    .table-head{
+
+    .table-head {
         font-size: 16px;
     }
-    .bmi{
+
+    input {
+        width: 150px;
+    }
+
+    .run-title {
+        padding: 16px 18%;
+    }
+
+    .bmi {
         margin: auto 20px;
     }
-    /* alst */
-    .trainers{
+
+    .trainers {
         grid-template-columns: 1fr;
         padding: 25px;
         margin: 25px;
     }
 }
-/* .hide{
-    display: none;
-} */
